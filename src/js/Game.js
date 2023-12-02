@@ -5,6 +5,7 @@ export default class Game {
     this.boardsCells = [];
     this.random = 0;
   }
+
   createBoard(cage) {
     const boardEl = document.getElementById('board');
     boardEl.classList.add('cursor');
@@ -15,6 +16,7 @@ export default class Game {
       this.randomImg();
     }
   }
+
   randomImg() {
     setInterval(() => {
       this.boardsCells = [...document.querySelectorAll('.game-cell')];
