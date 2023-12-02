@@ -1,0 +1,1 @@
+import Game from"./Game";import IndexGoblin from"./IndexGoblin";var gamesBoard=new Game;gamesBoard.createBoard(16);var indGob=new IndexGoblin;indGob.renderApp(),indGob.gameClick();
