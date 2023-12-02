@@ -5,7 +5,6 @@ export default class IndexGoblin {
     this.randomNumber = null;
     this.gameField = [];
   }
-  
   renderApp() {
     this.gameField = document.getElementById('board');
     const points = document.createElement('div');
@@ -17,7 +16,6 @@ export default class IndexGoblin {
     document.querySelector('.points').textContent = 'Ваши баллы:';
     document.querySelector('.goblin').textContent = 'Ваши промахи:';
   }
-  
   gameClick() {
     this.gameCells = [...document.querySelectorAll('.game-cell')];
     this.gameCells.forEach((elem) => {
@@ -34,7 +32,6 @@ export default class IndexGoblin {
       });
     });
   }
-  
   winOrLose() {
     if (this.goblins > 4) {
       const lost = document.createElement('div');
